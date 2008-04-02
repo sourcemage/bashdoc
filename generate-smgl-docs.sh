@@ -13,7 +13,11 @@ PROJECT=SourceMageDocs
 
 QUIET=${QUIET:--q -q}
 
-SCRIPTS="/var/lib/sorcery/modules/lib* /var/lib/sorcery/modules/url_handlers/url_* /usr/sbin/cast /usr/sbin/sorcery /usr/sbin/dispel /usr/sbin/gaze /usr/sbin/invoke /usr/sbin/scribbler /usr/sbin/scribe /usr/sbin/summon /usr/sbin/vcast /usr/sbin/xsorcery"
+SCRIPTS="/var/lib/sorcery/modules/lib* /var/lib/sorcery/modules/url_handlers/url_* \
+/var/lib/sorcery/modules/build_api/{api2,api1,common} /var/lib/sorcery/modules/dl_handlers/dl_* \
+/usr/sbin/cast /usr/sbin/sorcery /usr/sbin/dispel /usr/sbin/gaze /usr/sbin/invoke \
+/usr/sbin/cleanse /usr/sbin/confmeld /usr/sbin/alter /usr/sbin/delve /usr/sbin/cabal \
+/usr/sbin/scribbler /usr/sbin/scribe /usr/sbin/summon /usr/sbin/vcast /usr/sbin/xsorcery"
 #exclude non-sorcery files, like backups~ or numbered versions
 for FILE in $SCRIPTS
 do

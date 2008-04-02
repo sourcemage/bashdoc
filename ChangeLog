@@ -1,5 +1,6 @@
 2008-04-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* generate-smgl-docs.sh: fixed long standing HTMl typo
+	  added missing scripts
 	* started documenting changes the standard smgl way
 	* bashdoc: chmod +x
 
