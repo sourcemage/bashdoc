@@ -1,9 +1,17 @@
-Sun Aug 13 13:08:12 PDT 2006
+Sun Oct 14 17:24:19 CEST 2007; Arvid Norlander
+  The last two days I have changed so much on bashdoc that I lost count of it
+  Some nice things:
+    Cleaned up code.
+    XHTML and CSS.
+    Made bashdoc able to document variables.
+    Fix many bugs.
+
+Sun Aug 13 13:08:12 PDT 2006; Paul Mahon
   Fix bug which caused either extra garbage around function links in src or
   skipped some interlinks.
   Release bashdoc-0.1.8
 
-Sun Jan 22 16:22:45 EST 2006
+Sun Jan 22 16:22:45 EST 2006; Paul Mahon
   ChangeLog: Started
   src2html: changed sed to fix the weird invalid range end erors
     Changes suggested by Jaka Kranjc
