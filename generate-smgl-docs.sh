@@ -11,7 +11,6 @@ FLOW=$BIN/flow.sh
 SRC2HTML=$BIN/src2html.sh
 PROJECT=SourceMageDocs
 
-
 QUIET=${QUIET:--q -q}
 
 SCRIPTS="/var/lib/sorcery/modules/lib* /var/lib/sorcery/modules/url_handlers/url_* /usr/sbin/cast /usr/sbin/sorcery /usr/sbin/dispel /usr/sbin/gaze /usr/sbin/invoke /usr/sbin/scribbler /usr/sbin/scribe /usr/sbin/summon /usr/sbin/vcast /usr/sbin/xsorcery"
@@ -45,7 +44,7 @@ else
 	echo "The bashdoc tools are not installed, please cast bashdoc!"
 fi
 
-${SRC2HTMl} --funcs $DOCDIR $SCRIPTS
+${SRC2HTML} --funcs $DOCDIR $SCRIPTS
 if which dot >/dev/null 2>&1 ; then
 	${FLOW}	--funcs $DOCDIR --exclude debug --exclude message \
 		--exclude query $SCRIPTS

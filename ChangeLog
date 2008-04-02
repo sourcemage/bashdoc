@@ -1,3 +1,7 @@
+2008-04-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* generate-smgl-docs.sh: fixed long standing HTMl typo
+	* started documenting changes the standard smgl way
+
 Sun Oct 14 17:24:19 CEST 2007; Arvid Norlander
   The last two days I have changed so much on bashdoc that I lost count of it
   Some nice things:
