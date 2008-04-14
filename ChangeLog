@@ -1,3 +1,7 @@
+2008-04-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* generate_tarball.sh, version: added
+	* version: 0.2
+
 2008-04-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* generate-smgl-docs.sh: fixed long standing HTMl typo
 	  added missing scripts
