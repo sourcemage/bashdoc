@@ -22,7 +22,7 @@ SCRIPTS="/var/lib/sorcery/modules/lib* /var/lib/sorcery/modules/url_handlers/url
 for FILE in $SCRIPTS
 do
 	if grep -q "[0-9]" <<< $FILE; then
-		if grep -q "libgcc2" <<< $FILE; then
+		if grep -Eq "(libgcc2|api[12])" <<< $FILE; then
 			SCRIPTS2="$SCRIPTS2 $FILE"
 		fi
 	elif grep -q '~' <<< $FILE; then
