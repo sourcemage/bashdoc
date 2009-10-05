@@ -366,10 +366,11 @@ function parse_comments()
 ##	@Stdout	HTMLized tags
 #---------------------
 function output_parsed_tags() {
-	local i
+	local i, label
 	for i in ${!tag_*} ; do
 		# Convert _ in tags to space. Looks better.
-		echo "	<h3 class=\"othertag ${1}othertag ${i/tag_/tag-}\">$(sed 's/_/ /g' <<< "${i#tag_}")</h3>"
+		label=$(sed -e 's/_/ /g' -e 's,^.,\U&,' <<< "${i#tag_}")
+		echo "	<h3 class=\"othertag ${1}othertag ${i/tag_/tag-}\">$label</h3>"
 		# This may be fun, allow special formatting by tag.
 		echo "	<p class=\"othertag ${1}othertag ${i/tag_/tag-}\">"
 		echo "	${!i}"
